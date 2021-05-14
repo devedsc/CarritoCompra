@@ -26,7 +26,7 @@ addCarrito(e)
 const fetchData = async () => {
 
     try {
-        const res = await fetch('/assets/api.json') // consumir json placeholder
+        const res = await fetch('./assets/api.json') // consumir json placeholder
         const data = await res.json()
         pintarCards(data)
     } catch (error){
